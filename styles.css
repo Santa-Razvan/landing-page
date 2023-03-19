@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,8 +7,8 @@
 }
 
 body {
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #F9FAF8;
@@ -73,13 +73,19 @@ header .container {
     font-weight: 900;
 }
 
+header p {
+    color: #E5E7EB;
+}
+
 header button {
     background: #3882F6;
     border-style: none;
     margin-top: 10px;
-    padding: 5px 30px;
+    padding: 6px 30px;
     border-radius: 5px;
     color: white;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .boxes {
@@ -90,7 +96,7 @@ header button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    row-gap: 30px;
 }
 
 .box {
@@ -118,4 +124,67 @@ section h2 {
     font-size: 36px;
     font-weight: 900;
     margin-bottom: 20px;
+}
+
+.quote-box {
+    background: #E5E7EB;
+    height: 400px;
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-box p {
+    align-self: auto;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-right: 60px;
+}
+
+.quote-d {
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+}
+
+.quote {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.action-box {
+    margin: 0 auto;
+    padding: 0 30px;
+    background: #3882F6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 1140px;
+}
+
+.action-box button {
+    background: #3882F6;
+    border-style: none;
+    border: 1px solid white;
+    margin-top: 10px;
+    padding: 6px 30px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.action-box h3 {
+    font-weight: 600;
+}
+
+.action-box p {
+    font-weight: 100;
+    color: #E5E7EB;
 }
